@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.sec-layer{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.layer-2{
+    background-image: url('../../assets//flowers2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    height: 880px;
+}
+
+
+.p-1{
+    font-family: 'Pacifico', cursive;
+}   
+
+/* 
+.flow{
+    width: 10%;
+    height: 20%;
+    justify-content: left;
+} */
+
+.title-col{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 0%;
+    margin-top: 100px;
+}
+
+.title-col p{
+    font-size: 1.2rem;
+    /* width:700px; */
+}
+
+.title-col button{
+    cursor: pointer;
+    font-size: 1rem;
+  border: solid .25em transparent;
+  /* border-radius: 8em; */
+  align-items: center;
+  text-transform: uppercase;
+  width: 270px;
+  height: 50px;
+  align-items: center;
+  justify-content: cen;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(90deg, #0089BA, 0%, #008E9B 10%, #008F7A 80%); 
+
+}
+
+.txt-rotate{
+ color: #008F7A; 
+
+}
+
+.title-col h1{
+    font-size: 4rem;
+}
+
+.title-col h1 span{
+    font-size : 5rem;
+}

@@ -1,0 +1,109 @@
+/* .container{
+    width: 50%;
+    margin: auto;
+    padding-bottom: 20%;
+    padding-top: 10%;
+} */
+
+
+.project {
+  /* height: 800px; */
+  padding: 0 0 50px 0;
+  position: relative;
+  background: rgb(2,0,36);
+   background: linear-gradient(90deg, #0089BA, 0%, #008F7A 10%, #34AA94 80%); 
+
+    /* background: linear-gradient(90deg, #008E9B 5%, #008F7A 95%);  */
+  }
+  .project-bx {
+    /* background: #151515; */
+    color: white;
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    margin-top: -60px;
+    justify-content: center;
+  }
+  .project h2 {
+      font-size: 45px;
+      font-weight: 700;
+  }
+  .project p {
+      color: black;
+      font-size: 18px;
+      letter-spacing: 0.8px;
+      line-height: 1.5em;
+      margin: 14px 0 75px 0;
+      text-align: justify;
+  }
+
+  .btn-1{
+    color: white;
+    
+  }
+  
+
+.grid-container-news{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* margin: 100px auto; */
+  flex-wrap: wrap;
+}
+
+.grid-item-news{
+  margin: 15px 15px 15px 15px;
+  border-radius: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.css-1ri6ub7-MuiPaper-root-MuiCard-root{
+  border-radius: 70px !important;
+}
+
+.css-1knaqv7-MuiButtonBase-root-MuiButton-root{
+  padding: 15px 30px !important;
+    color: black !important;
+    background: #abd8ff !important;
+    font-size: 16px !important;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    overflow: hidden ;
+    transition: .5s !important;
+    letter-spacing: 2px !important;
+    border: 1px solid #8f7cec;
+    /* margin: auto !important; */
+    border-radius: 5px !important;
+}
+
+.css-1knaqv7-MuiButtonBase-root-MuiButton-root:hover{
+  background: #8f7cec !important;
+  color: #fff !important;
+  border-radius: 5px !important;
+  box-shadow: 0 0 5px #8F7CEC, 0 0 25px #8f7cec, 0 0 50px #8f7cec, 0 0 100px #8f7cec !important;
+}
+
+/* new */
+
+.box{
+  width: 80rem;
+  margin: auto;
+}
+
+.css-o4b71y-MuiAccordionSummary-content{
+  margin: 0px Im !important;
+}
+
+.img-kkf{
+  text-align: center;
+  margin-bottom: 2%;
+  margin-top: 0px;
+}
+
+.content{
+  width: 80%;
+  margin: auto;
+}

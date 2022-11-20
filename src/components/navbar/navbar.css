@@ -1,0 +1,42 @@
+/* @import url(google fonts); */
+@import url('https://fonts.googleapis.com/css2?family=Freehand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.first-col{
+  /* background: linear-gradient(#e66465, #9198e5); */
+ background: #008F7A;
+ /* background: linear-gradient(90deg, #0089BA, 0%, #008F7A 10%, #34AA94 80%);  */
+ height: 50%;
+ text-align: center;
+ /* overflow: hidden; */
+ /* position: fixed; */
+}
+
+
+.nav-up{
+    padding-top: 2.5rem; 
+    padding-bottom: 2.5rem;
+    margin-bottom: 3rem; 
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.nav-right{
+    display: flex ;
+    align-items: center
+}
+
+.nav-text{
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem; 
+    /* padding-bottom: 0.5rem; */
+    border: none;
+    border-radius: 0px;
+    margin-left: 2rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+

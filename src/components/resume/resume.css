@@ -1,0 +1,67 @@
+.resume {
+    /* padding: 0 0 50px 0; */
+    height: 671px;
+    margin: 0;
+    position: relative;
+    background-image: url('../../assets//flowers3.png');
+    background-repeat: no-repeat;
+    background-size: 53%;
+    background-position: left center;
+    transform: rotateX(180deg) rotateY(180deg);
+    font-size: 1.3rem;
+    /* height: 1000px; */
+  }
+  .skill-bx1 {
+    /* background: #151515; */
+    color: black;
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    /* margin-top: 0px; */
+    /* transform: rotateX(180deg) rotateY(180deg); */
+
+  }
+
+  .resume p{
+    /* color: black; */
+    /* border-radius: 64px; */
+    text-align: left;
+    /* padding: 10px 10px; */
+    /* margin-top: -60px; */
+    /* transform: rotateX(180deg) rotateY(180deg); */
+  }
+  .resume-slider {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    
+  }
+  
+  .container-2{
+    display: flex;
+    flex-direction: row;
+    transform: rotateX(180deg) rotateY(180deg);
+    justify-content: left;
+    align-items: none ;
+}
+
+.img-col{
+    /* justify-content: center; */
+    /* margin-top: 8%; */
+    width: 30%;
+    /* margin-right: 200px; */
+}
+
+.detail-col{
+    width: 40%;
+    /* transform: rotateX(180deg) rotateY(180deg); */
+}
+
+.detail-col h1{
+  font-size: 45px;
+      font-weight: 700;
+}
+
+.git-btn{
+  margin-left: 30px;
+}
