@@ -15,7 +15,7 @@ const Resume = () => {
                         <img src={profile} width='500px'/>
                             </div>
                             <div className="detail-col">
-                        <a href ='https://www.linkedin/com/in/umairatul-asyiqin-1b43231a8' />
+                        {/* <a href ='https://www.linkedin/com/in/umairatul-asyiqin-1b43231a8' /> */}
 
                         <h1> BACKGROUND </h1>
                         <p><b>Name : </b>Umairatul Asyiqin Begum</p>

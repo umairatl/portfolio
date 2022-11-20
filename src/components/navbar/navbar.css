@@ -14,9 +14,9 @@
 
 
 .nav-up{
-    padding-top: 2.5rem; 
-    padding-bottom: 2.5rem;
-    margin-bottom: 3rem; 
+    padding-top: 2rem; 
+    padding-bottom: 2rem;
+    margin-bottom: 2/5rem; 
     display: flex;
     color: white;
     justify-content: space-around;
@@ -37,6 +37,28 @@
     border-radius: 0px;
     margin-left: 2rem;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
+
+@media screen and (max-width: 414px){
+    .nav-up {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    };
+
+    .nav-text{
+        font-size: 0.8rem;
+        padding-right: 0px;
+    }
+
+    .vis{
+        display: none;
+    }
+
+    .nav-right{
+        /* align-items: none; */
+        margin-right: 61px;
+    }
+
+    }
 

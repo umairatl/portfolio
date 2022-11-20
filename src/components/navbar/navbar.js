@@ -6,7 +6,8 @@ const Navbar = () => {
     return ( 
         <div className='first-col'>
         <nav className="nav-up">
-          <h1 className="font-burtons text-xl">developedbyuab</h1>
+          <div className="vis">
+          <h1 className="font-burtons text-xl">developedbyuab</h1></div>
           <ul className="nav-right">
               <a className="nav-text" href="#resume">  About Me </a>
               <a className="nav-text" href="#project">  Projects </a>

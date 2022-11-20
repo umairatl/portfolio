@@ -32,6 +32,7 @@ const Skills = () => {
                         <div className="skill-bx wow zoomIn">
                             <h2>Skills</h2>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                           <div className='car-col'>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                                 <div className="item">
                                 <div class="container-2">
@@ -46,25 +47,31 @@ const Skills = () => {
                               </div>
                               <p>Able to create responsive web app</p>
                                 </div>
+
+
+
                                 <div className="item">
                                 <div class="container-2">
                                   <div class="container__progressbars">
-                                      <div class="progressbar">
-                                          <svg class="progressbar__svg">
-                                              <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-html shadow-html"> </circle>
-                                          </svg>
-                                          <span class="progressbar__text shadow-react">REACT JS</span>
-                                    </div>
+                                  <div class="progressbar">
+			<svg class="progressbar__svg">
+				<circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-react shadow-react"> </circle>
+			</svg>
+			<span class="progressbar__text shadow-react">REACT JS</span>
+		</div>
                                 </div>
                               </div>
                               <p>Able to use basic components like route, state management</p>
                                 </div>
+
+
+
                                 <div className="item">
                                 <div class="container-2">
                                   <div class="container__progressbars">
                                       <div class="progressbar">
                                           <svg class="progressbar__svg">
-                                              <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-html shadow-html"> </circle>
+                                              <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-angular shadow-angular"> </circle>
                                           </svg>
                                           <span class="progressbar__text shadow-angular">ANGULAR MATERIAL</span>
                                     </div>
@@ -77,7 +84,7 @@ const Skills = () => {
                                   <div class="container__progressbars">
                                       <div class="progressbar">
                                           <svg class="progressbar__svg">
-                                              <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-html shadow-html"> </circle>
+                                              <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-typescript shadow-typescript"> </circle>
                                           </svg>
                                           <span class="progressbar__text shadow-typescript">TYPESCRIPT</span>
                                     </div>
@@ -89,7 +96,7 @@ const Skills = () => {
                                   <div class="container__progressbars">
                                       <div class="progressbar">
                                           <svg class="progressbar__svg">
-                                              <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-html shadow-html"> </circle>
+                                              <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-pm shadow-pm"> </circle>
                                           </svg>
                                           <span class="progressbar__text shadow-pm">PROJECT MANAGEMENT</span>
                                     </div>
@@ -102,7 +109,7 @@ const Skills = () => {
                                   <div class="container__progressbars">
                                       <div class="progressbar">
                                           <svg class="progressbar__svg">
-                                              <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-html shadow-html"> </circle>
+                                              <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-ad shadow-ad"> </circle>
                                           </svg>
                                           <span class="progressbar__text shadow-ad">ANALYSIS & DESIGN</span>
                                     </div>
@@ -111,11 +118,11 @@ const Skills = () => {
                               <p>Analyzing user requirements, system design, database design</p>
                                 </div>
                             </Carousel>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {/* <img className="background-image-left" src={colorSharp} alt="Image" /> */}
         </section>
       )
     }

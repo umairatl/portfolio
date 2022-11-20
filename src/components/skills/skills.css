@@ -5,8 +5,9 @@
   .skill-bx {
     border-radius: 64px;
     text-align: center;
-    padding: 60px 50px;
+    padding: 24px 50px;
     margin-top: -60px;
+    margin-bottom: 10rem;
   }
   .skill h2 {
       font-size: 45px;
@@ -78,13 +79,39 @@
     transform: translate(5px, 5px);
 }
 
-.shadow-html {
+/* .shadow-html {
     filter: drop-shadow(0 0 5px #008E9B);
-}
+} */
  
 .circle-html {
     -webkit-animation: anim_circle-html 1s ease-in-out forwards;
             animation: anim_circle-html 1s ease-in-out forwards;
+}
+
+.circle-react {
+    -webkit-animation: anim_circle-react 1s ease-in-out forwards;
+            animation: anim_circle-react 1s ease-in-out forwards;
+}
+
+.circle-angular {
+    -webkit-animation: anim_circle-angular 1s ease-in-out forwards;
+            animation: anim_circle-angular 1s ease-in-out forwards;
+}
+
+
+.circle-typescript {
+    -webkit-animation: anim_circle-typescript 1s ease-in-out forwards;
+            animation: anim_circle-typescript 1s ease-in-out forwards;
+}
+
+.circle-pm {
+    -webkit-animation: anim_circle-pm 1s ease-in-out forwards;
+            animation: anim_circle-pm 1s ease-in-out forwards;
+}
+
+.circle-ad {
+    -webkit-animation: anim_circle-ad 1s ease-in-out forwards;
+            animation: anim_circle-ad 1s ease-in-out forwards;
 }
  
 .progressbar__text {
@@ -100,19 +127,19 @@
  
 @keyframes anim_circle-html {
     to {
-        stroke-dashoffset: 200;
+        stroke-dashoffset: 100;
     }
 } 
 
 @keyframes anim_circle-react {
     to {
-        stroke-dashoffset: 300;
+        stroke-dashoffset: 220;
     }
 } 
 
 @keyframes anim_circle-angular {
     to {
-        stroke-dashoffset: 300;
+        stroke-dashoffset: 220;
     }
 } 
 
@@ -124,12 +151,97 @@
 
 @keyframes anim_circle-pm {
     to {
-        stroke-dashoffset: 300;
+        stroke-dashoffset: 90;
     }
 } 
 
 @keyframes anim_circle-ad {
     to {
-        stroke-dashoffset: 300;
+        stroke-dashoffset: 90;
     }
 } 
+
+.react-multiple-carousel__arrow{
+    width: 31px !important;
+   background: linear-gradient(90deg, #0089BA, 0%, #008E9B 10%, #008F7A 80%) !important;
+   border-radius: 1px !important; 
+    
+}
+
+
+@media screen and (max-width: 1629px){
+   .skill-bx{
+    margin-top: -95px;
+   }
+
+   .car-col{
+    width: 85rem;
+   }
+  }
+
+  @media screen and (max-width: 1256px){
+    .car-col{
+     width: 59rem;
+    }
+   }
+
+  @media screen and (max-width: 1220px){
+    .sec-layer{
+        height: 838px;
+    }
+
+    .car-col{
+        width: 64rem;
+       }
+   }
+
+   @media screen and (max-width: 1178px){
+    .skill h2{
+        margin-top: 7rem;
+    }
+   }
+
+
+ @media screen and (max-width: 1024px){
+    .car-col{
+        width: 62rem;
+       }
+   
+   }
+
+   @media screen and (max-width: 956px){
+    .car-col{
+       margin: -49px;
+       }
+   
+   }
+
+   @media screen and (max-width: 970px){
+    .car-col{
+        width: 35rem;
+       }
+    }
+    
+@media screen and (max-width: 970px){
+.car-col{
+    width: 24rem;
+    margin: auto;
+    text-align: center;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .skill-bx{
+        margin-top: -171px;
+    }
+
+    .car-col{
+        width: 20rem;
+        margin: auto;
+        text-align: center;
+        }
+
+
+    }
+   
+  

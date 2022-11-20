@@ -7,6 +7,8 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import kingkongfood from '../../assets/kingkongfood.png'; 
+import amiibo from '../../assets/amiibo.png'; 
+
 
 
 import Accordion from '@mui/material/Accordion';
@@ -79,48 +81,39 @@ feedback and the business can collect feedback information effectively.</p>
       <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <AccordionSummary
           // expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2bh-content"
-          id="panel2bh-header"
+          aria-controls="panel1bh-content"
+          id="panel1bh-header"
         >
-          <Typography sx={{ width: '33%', flexShrink: 0 }}>2022</Typography>
-          <Typography sx={{ color: 'text.secondary' }}>
-            Front End Module Hackathon (BeSquare)
+          <Typography sx={{ width: '33%', flexShrink: 0 }}>
+            2022
           </Typography>
+          <Typography sx={{ color: 'text.secondary' }}>Front End Hackathon (BeSquare)</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus,
-            varius pulvinar diam eros in elit. Pellentesque convallis laoreet
-            laoreet.
+            <div className="img-kkf"> 
+            <h1>Amiibo World</h1>
+            <img src={amiibo} width='70%'/></div>
+            <div className="content">
+            <p>Amiibo website is a sort of portfolio site about characters related to amiibo series. The project is developed during Front End hackathon at BeSquare</p>
+          <ul> <b>Language</b>
+            <li>HTML</li>
+            <li>React JS</li>
+           </ul>
+          
+           <ul> <b>API</b>
+            <li>Restful API - https://amiiboapi.com/</li>
+           </ul>
+           </div>
+
           </Typography>
+          <Button className="btn-1" size="small" 
+        onClick={() => window.open('https://team3b-fe-hackathon1-1ihi05joa-akmal21hakim.vercel.app/')}>Preview</Button>
         </AccordionDetails>
       </Accordion>
      
     </div>  
-     
-     
-            {/* <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        height="250"
-        image={kingkongfood}
-        alt="green iguana"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Final Year Project
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-            Currently 
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button className="btn-1" size="small" 
-        onClick={() => window.open('https://www.youtube.com/watch?v=Dj5xrAZxWyU')}>Preview</Button>
-      </CardActions>
-    </Card> */}
   </div>
-
 </div>
     </div> 
         </div>

@@ -107,3 +107,55 @@
   width: 80%;
   margin: auto;
 }
+
+@media screen and (max-width: 1256px){
+  .box{
+    width: 70rem;
+  }
+ 
+ }
+
+@media screen and (max-width: 1220px){
+  .box{
+    width: 60rem;
+  }
+ 
+ }
+
+
+ @media screen and (max-width: 1024px){
+  .box{
+    width: 50rem;
+  }
+ 
+ }
+
+ @media screen and (max-width: 872px){
+  .box{
+    width: 40rem;
+  }
+ 
+ }
+
+
+ @media screen and (max-width: 414px){
+  .box{
+    width: 20rem;
+    /* height: ; */
+  }
+
+  .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root{
+    height: 7rem;
+    /* margin-top: 10rem; */
+  }
+
+  .project p{
+    text-align: center;
+  }
+
+  .project h2{
+    font-size: 35px;
+  }
+ 
+ }
+
