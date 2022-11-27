@@ -1,7 +1,7 @@
 import "../navbar/navbar.css";
 import pdf from "../../assets/Resume(Umairatul).pdf";
 import React, { useState } from "react";
-import SideNav, { MenuIcon } from "react-simple-sidenav";
+// import SideNav, { MenuIcon } from "react-simple-sidenav";
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -29,7 +29,7 @@ const Navbar = () => {
         </nav>
       </div>
 
-      <div className="nav-mobile">
+      {/* <div className="nav-mobile">
         <div className="top">
           <div className="left-side">
             <span onClick={() => setShowNav(true)}>&#9776;</span>
@@ -50,7 +50,7 @@ const Navbar = () => {
             ]}
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
