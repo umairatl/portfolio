@@ -1,21 +1,16 @@
 .footer {
-    padding: 0 0 10px 0; 
-    /* position: relative; */
-    text-align: center;
-    background: #3a4c40;
-    color: white;
+  padding: 0 0 10px 0;
+  text-align: center;
+  background: #3a4c40;
+  color: white;
+}
 
+.footer p {
+  padding-top: 2%;
+}
 
-    /* background: rgb(2,0,36); */
-    /* background: linear-gradient(90deg, #008E9B 5%, #008F7A 95%);  */
+@media screen and (max-width: 414px) {
+  .footer p {
+    padding-top: 5%;
   }
-
-  .footer p{
-    padding-top: 2%;
-  }
- 
-  @media screen and (max-width: 414px){
-    .footer p{
-      padding-top: 5%;
-    }
-    }
+}
