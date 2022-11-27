@@ -1,14 +1,89 @@
 .resume {
-    /* height: 671px; */
     margin: 0;
     position: relative;
-    background-image: url('../../assets//flowers3.png');
-    background-repeat: no-repeat;
-    background-size: 53%;
-    background-position: left center;
-    transform: rotateX(180deg) rotateY(180deg);
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
   }
+
+  .resume h1{
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 3rem;
+
+  }
+
+  .cont-wrap-bck{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: fit-content;
+    margin:5rem  auto;
+    background: #486856;
+    border-radius: 5rem;
+    color: white
+  }
+
+  .wrap-details{
+    font-size: 1.4rem;
+    /* background-color: pink; */
+    width: 57%;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    /* margin-top: 3rem; */
+  }
+
+  .wrap-details h1{
+    text-align: center;
+  }
+
+  .cont-wrap-bck img{
+    border-radius: 5rem;
+  }
+
+  .socials-btn-wrap{
+    text-align: center;
+    margin: 0px auto 7rem;
+    /* font-size: 3rem; */
+  }
+
+  .socials-btn-wrap .btn-social{
+    width: 80px;
+    background: #003200;
+    border: 1px solid green;
+    /* padding: 4px; */
+    font-size: 1.5rem;
+   }
+
+   .socials-btn-wrap .btn-social-resume{
+    background: #003200;
+    width: 90px;
+    border-radius: 0px;
+    font-size: 1rem;
+    padding: 4px;
+    text-align: center;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile-view-resume{
+  display: none;
+}
+
   .skill-bx1 {
     color: black;
     border-radius: 64px;
@@ -28,11 +103,11 @@
   }
   
   .container-2{
-    display: flex;
-    flex-direction: row;
-    transform: rotateX(180deg) rotateY(180deg);
-    justify-content: left;
-    align-items: none ;
+    /* display: flex;
+    flex-direction: row; */
+    /* transform: rotateX(180deg) rotateY(180deg); */
+    /* justify-content: left;
+    align-items: none ; */
 }
 
 .img-col{
@@ -56,61 +131,92 @@
   margin-left: 30px;
 }
 
-@media screen and (max-width: 1629px){
-  .resume{
-    /* height: 567px; */
+
+
+
+@media screen and (max-width: 1316px){
+  img{
+   width: 265px;
   }
 
-  .skill-bx1{
-   padding: 0%;
-
+  .detail-col h1{
+   font-size: 30px;
   }
 
-  .detail-col{
-    margin-left: 5rem;
-}
-}
-
-@media screen and (max-width: 1462px){
-
-  .resume{
-    /* background-size: 0%; */
-    background: none ;
-    background-position: left center;
-
+  .resume p{
+   font-size: 12pt;
+   width: 16rem;
   }
 
   .container-2{
-flex-direction: column;
-margin-top: 3rem;
+   margin-right: -8rem;
   }
 
-  .skill-bx1{
-   padding: 0%;
-
+  button{
+   background-color: none;
   }
 
-  .detail-col{
-    margin-left: 5rem;
+  .mobile-view-resume button:hover{
+   background: #507963;
+  }
+
+  .btn-social{
+   width: 80px;
+   background: #003200;
+   border-radius: 0px;
+   border: 0;
+   font-size: 0.8rem;
+  }
+
+  .btn-social-resume{
+   background: #003200;
+   width: 80px;
+   border-radius: 0px;
+   font-size: 0.8rem;
+   padding: 0px;
+  }
+
+  .resume{
+   display: none;
+  }
+
+.mobile-view-resume{
+display: block;
+text-align: center;
+}
+
+.mobile-view-resume img{
+width: 381px;
+border-bottom-left-radius: 195px;
+border-bottom-right-radius: 195px;
+}
+
+.mobile-view-resume h1{
+color: #003200
+}
+
+.mobile-view-resume b{
+color: #003200
+}
+
+.cont-resume-mobile{
+text-align: center;
+width: 60%;
+margin: 0px auto 5rem;
+font-size: 1rem
 }
 }
 
 
-@media screen and (max-width: 1044px){
-  .container-2{
-    margin-right: -8rem
-  }
-  }
 
-  @media screen and (max-width: 872px){
-    .container-2{
-      margin-right: -10rem
-    }
-    }
+
+
+
+
 
     @media screen and (max-width: 414px){
      img{
-      width: 270px;
+      width: 265px;
      }
 
      .detail-col h1{
@@ -125,5 +231,60 @@ margin-top: 3rem;
      .container-2{
       margin-right: -8rem;
      }
-      }
+
+     button{
+      background-color: none;
+     }
+
+     .mobile-view-resume button:hover{
+      background: #507963;
+     }
+
+     .btn-social{
+      width: 80px;
+      background: #003200;
+      border-radius: 0px;
+      border: 0;
+      font-size: 0.8rem;
+     }
+
+     .btn-social-resume{
+      background: #003200;
+      width: 80px;
+      border-radius: 0px;
+      font-size: 0.8rem;
+      padding: 0px;
+     }
+
+     .resume{
+      display: none;
+     }
+
+.mobile-view-resume{
+display: block;
+text-align: center;
+}
+
+.mobile-view-resume img{
+  width: 381px;
+  border-bottom-left-radius: 195px;
+  border-bottom-right-radius: 195px;
+}
+
+.mobile-view-resume h1{
+  color: #003200
+}
+
+.mobile-view-resume b{
+  color: #003200
+}
+
+.cont-resume-mobile{
+  text-align: left;
+  width: 80%;
+  margin: 0px auto 5rem;
+  font-size: 0.8rem
+}
+
+}
   

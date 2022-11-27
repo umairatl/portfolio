@@ -133,31 +133,31 @@
 
 @keyframes anim_circle-react {
     to {
-        stroke-dashoffset: 220;
+        stroke-dashoffset: 200;
     }
 } 
 
 @keyframes anim_circle-angular {
     to {
-        stroke-dashoffset: 220;
+        stroke-dashoffset: 240;
     }
 } 
 
 @keyframes anim_circle-typescript {
     to {
-        stroke-dashoffset: 300;
+        stroke-dashoffset: 290;
     }
 } 
 
 @keyframes anim_circle-pm {
     to {
-        stroke-dashoffset: 90;
+        stroke-dashoffset: 140;
     }
 } 
 
 @keyframes anim_circle-ad {
     to {
-        stroke-dashoffset: 90;
+        stroke-dashoffset: 140;
     }
 } 
 
@@ -241,7 +241,66 @@
         text-align: center;
         }
 
+        .skill h2 {
+            margin-top: 1rem;
+        }
+    
+        .wrap-out-btn{
+            background: none !important;
+        }
 
+    .progressbar__svg{
+        margin-bottom: -29rem;
     }
+
+    .progressbar__text {
+        top: 82%;
+        left: 49%;
+    }
+
+    .item p{
+        width: 6rem
+    }
+
+    @keyframes anim_circle-html {
+        to {
+            stroke-dashoffset: 120;
+
+        }
+    } 
+    
+    @keyframes anim_circle-react {
+        to {
+            stroke-dashoffset: 140;
+        }
+    } 
+    
+    @keyframes anim_circle-angular {
+        to {
+            stroke-dashoffset: 200;
+        }
+    } 
+    
+    @keyframes anim_circle-typescript {
+        to {
+            stroke-dashoffset: 240;
+        }
+    } 
+    
+    @keyframes anim_circle-pm {
+        to {
+            stroke-dashoffset: 290;
+
+        }
+    } 
+    
+    @keyframes anim_circle-ad {
+        to {
+            stroke-dashoffset: 120;
+
+        }
+} 
+
+}
    
   

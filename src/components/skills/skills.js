@@ -2,6 +2,7 @@ import '../skills/skills.css'
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import SkillsMobile from '../mob-view-skills/skills-mob-view';
 
 const Skills = () => {
     const responsive = {
@@ -25,7 +26,8 @@ const Skills = () => {
       };
     
       return (
-        <section className="skill" id="skills">
+        <div className='wrap-out-skills'>
+        {/* <section className="skill" id="skills">
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -123,7 +125,11 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-        </section>
+
+
+        </section> */}
+            <SkillsMobile />
+            </div>
       )
     }
 export default Skills;

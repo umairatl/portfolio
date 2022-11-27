@@ -3,15 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 .first-col{
-  /* background: linear-gradient(#e66465, #9198e5); */
- background: #008F7A;
- /* background: linear-gradient(90deg, #0089BA, 0%, #008F7A 10%, #34AA94 80%);  */
+  background: #3a4c40;
  height: 50%;
  text-align: center;
- /* overflow: hidden; */
- /* position: fixed; */
 }
 
+.nav-mobile{
+    display: none;
+    padding-bottom: 2em;
+ height: 50%;
+  background: #3a4c40;
+}
 
 .nav-up{
     padding-top: 2rem; 
@@ -40,10 +42,60 @@
     font-size: 1.3rem;
 }
 
-@media screen and (max-width: 414px){
+/* .nav-mobile{
+margin-top: 1rem;
+} */
+
+.nav-mobile span{
+    margin: 1rem;
+    font-size: 1.6rem;
+}
+
+
+.nav-section li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.nav-section h1{ 
+    background: #3a4c40 !important;
+    /* margin: 0px !important; */
+    line-height: 10px !important;
+    /* padding: 2px !important; */
+}
+/* 
+.nav-section li:hover{
+    background-color: black;
+} */
+
+.top{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+ /* background: #3a4c40; */
+ height: 3.5rem;
+ color: white;
+
+}
+
+.left-side{
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.right-side{
+    font-size: 1.2rem;
+    margin: 2rem
+}
+
+
+
+@media screen and (max-width: 662px){
     .nav-up {
         padding-top: 0px;
         padding-bottom: 0px;
+        display: none
     };
 
     .nav-text{
@@ -58,6 +110,44 @@
     .nav-right{
         /* align-items: none; */
         margin-right: 61px;
+    }
+
+    .nav-mobile{
+        display: block;
+    }
+
+    }
+
+
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+@media screen and (max-width: 414px){
+    .nav-up {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: none
+    };
+
+    .nav-text{
+        font-size: 0.8rem;
+        padding-right: 0px;
+    }
+
+    .vis{
+        display: none;
+    }
+
+    .nav-right{
+        /* align-items: none; */
+        margin-right: 61px;
+    }
+
+    .nav-mobile{
+        display: block;
     }
 
     }

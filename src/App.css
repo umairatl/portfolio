@@ -7,13 +7,14 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+  /* background: pink;   */
+
 }
 
 button {
 cursor: pointer;
 font-size: 1rem;
 border: solid .25em transparent;
-/* border-radius: 8em; */
 align-items: center;
 text-transform: uppercase;
 width: 270px;
@@ -23,7 +24,10 @@ justify-content: cen;
 margin-top: 10px;
 color: white;
 font-weight: bold;
-background: linear-gradient(90deg, #0089BA, 0%, #008E9B 10%, #008F7A 80%); 
+background: linear-gradient(90deg, #3a4c40, 0%, #507963 10%, #486564 80%); 
+}
+
+.main-cont{
 }
 
 @media screen and (max-width: 872px){

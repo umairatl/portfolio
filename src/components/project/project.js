@@ -29,7 +29,7 @@ const Project = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="project-bx wow zoomIn">
-                        <h2>MY PROJECTS</h2>
+                        <h2>My Projects</h2>
                      
             <div className="box">
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
@@ -49,16 +49,16 @@ const Project = () => {
             <h1>KingKongFood Web Application</h1>
             <img src={kingkongfood} width='70%'/></div>
             <div className="content">
-            <p>The main objective of the implementation and development of KingKongFood Web Application is to
-help the café to overcome its business problems. With the help of this website, KingKongFood is now
-able to have a more effective way of online ordering and thus avoid human error to occur. Besides that,
-by having KingKongWebsite, the business is utilizing the digital platform to promote and bring more
-customers into the business as it gives more exposure to the public about KingKongFood. The customers
-can also find the café information easily including location since the location of KingKongFood is not
-strategic and a bit difficult to find, hence the website provides the customer with the café information and
-it also helps the customers directly linked to the café location in Google Map. Customers also able to give
-feedback and the business can collect feedback information effectively.</p>
-<ul> <b>Language</b>
+                        <p>The main objective of the implementation and development of KingKongFood Web Application is to
+            help the café to overcome its business problems. With the help of this website, KingKongFood is now
+            able to have a more effective way of online ordering and thus avoid human error to occur. Besides that,
+            by having KingKongWebsite, the business is utilizing the digital platform to promote and bring more
+            customers into the business as it gives more exposure to the public about KingKongFood. The customers
+            can also find the café information easily including location since the location of KingKongFood is not
+            strategic and a bit difficult to find, hence the website provides the customer with the café information and
+            it also helps the customers directly linked to the café location in Google Map. Customers also able to give
+            feedback and the business can collect feedback information effectively.</p>
+            <ul> <b>Language</b>
             <li>HTML</li>
             <li>PHP</li>
             <li>MySQL</li>

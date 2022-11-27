@@ -10,8 +10,10 @@
   /* height: 800px; */
   padding: 0 0 50px 0;
   position: relative;
-  background: rgb(2,0,36);
-   background: linear-gradient(90deg, #0089BA, 0%, #008F7A 10%, #34AA94 80%); 
+ background: #486856;
+
+  /* background: rgb(2,0,36);
+   background: linear-gradient(90deg, #0089BA, 0%, #008F7A 10%, #34AA94 80%);  */
 
     /* background: linear-gradient(90deg, #008E9B 5%, #008F7A 95%);  */
   }
@@ -117,25 +119,69 @@
 
 @media screen and (max-width: 1220px){
   .box{
-    width: 60rem;
+    width: 40rem;
   }
- 
  }
+
+  @media screen and (max-width: 1038px){
+  .box{
+    width: 29rem;
+  }
+ } 
 
 
  @media screen and (max-width: 1024px){
   .box{
     width: 50rem;
   }
- 
+ }
+
+ @media screen and (max-width: 1017px){
+  .box{
+    width: 45rem !important;
+  }
  }
 
  @media screen and (max-width: 872px){
   .box{
     width: 40rem;
   }
- 
  }
+
+ @media screen and (max-width: 789px){
+  .box{
+    width: 40rem !important;
+  }
+ }
+
+ @media screen and (max-width: 706px){
+  .box{
+    width: 35rem !important;
+  }
+ }
+
+ @media screen and (max-width: 628px){
+  .box{
+    width: 30rem !important;
+  }
+ }
+
+ @media screen and (max-width: 558px){
+  .box{
+    width: 25rem !important;
+  }
+ }
+
+ @media screen and (max-width: 470px){
+  .box{
+    width: 17rem !important;
+  }
+
+  .project p{
+    margin-top: 55px
+  }
+ }
+
 
 
  @media screen and (max-width: 414px){
@@ -156,6 +202,12 @@
   .project h2{
     font-size: 35px;
   }
- 
  }
 
+
+ @media screen and (max-width: 1316px){
+  .box{
+    width: 60rem;
+  }
+ 
+ }

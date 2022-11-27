@@ -12,49 +12,48 @@ const HeaderTest = () => {
     const [index, setIndex] = useState(1);
     const period = 2000;
 
-    useEffect(() => {
-      let ticker = setInterval(() => {
-        tick();
-      }, delta);
+    // useEffect(() => {
+    //   let ticker = setInterval(() => {
+    //     tick();
+    //   }, delta);
   
-      return () => { clearInterval(ticker) };
-    }, [text])
+    //   return () => { clearInterval(ticker) };
+    // }, [text])
   
-    const tick = () => {
-      let i = loopNum % toRotate.length;
-      let fullText = toRotate[i];
-      let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+    // const tick = () => {
+    //   let i = loopNum % toRotate.length;
+    //   let fullText = toRotate[i];
+    //   let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
   
-      setText(updatedText);
+    //   setText(updatedText);
   
-      if (isDeleting) {
-        setDelta(prevDelta => prevDelta / 2);
-      }
+    //   if (isDeleting) {
+    //     setDelta(prevDelta => prevDelta / 2);
+    //   }
   
-      if (!isDeleting && updatedText === fullText) {
-        setIsDeleting(true);
-        setIndex(prevIndex => prevIndex - 1);
-        setDelta(period);
-      } else if (isDeleting && updatedText === '') {
-        setIsDeleting(false);
-        setLoopNum(loopNum + 1);
-        setIndex(1);
-        setDelta(500);
-      } else {
-        setIndex(prevIndex => prevIndex + 1);
-      }
-    }
+    //   if (!isDeleting && updatedText === fullText) {
+    //     setIsDeleting(true);
+    //     setIndex(prevIndex => prevIndex - 1);
+    //     setDelta(period);
+    //   } else if (isDeleting && updatedText === '') {
+    //     setIsDeleting(false);
+    //     setLoopNum(loopNum + 1);
+    //     setIndex(1);
+    //     setDelta(500);
+    //   } else {
+    //     setIndex(prevIndex => prevIndex + 1);
+    //   }
+    // }
 
 
     return (
-         
           <div className='sec-layer'>
             <div className='layer-2'>
             <div className='title-col'>
-            <h1>HI! <span className="txt-rotate" ataPeriod="1000"><span className="wrap">{text}</span></span></h1>
+            <h1>HI! <span className="txt-rotate" ataPeriod="1000"><span className="wrap">I'M BEGUM</span></span></h1>
+            <p> I'm a e-Business graduate from LJMU. I'm more of a visual person and passionate in building good, smooth and flexible website</p>
             <div className='sub-col'>
-            <p>I'm a e-Business graduate from LJMU and currently looking for a company that encourages growth </p>
-              <p> I am a more of a visual person and passionate in building good, smooth and flexible website</p>
+            {/* <p>I'm a e-Business graduate from LJMU. I'm more of a visual person and passionate in building good, smooth and flexible website</p> */}
             
             <a href="#project"> <button>My Projects</button></a>
             </div>
