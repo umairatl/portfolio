@@ -18,7 +18,7 @@ const SkillsMobile = () => {
           with
         </p>
       </div>
-      <div className="wrap-card">
+      <div className="wrap-card" >
         <Card className="card-skills">
           <img
             className="img-html"

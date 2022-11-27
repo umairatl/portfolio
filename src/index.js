@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 // import "aos/dist/aos.css";
 
 // AOS.init();
+// setTimeout(() => {AOS.refresh();}, 500);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

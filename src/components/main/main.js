@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./main.css";
-import flowers from "../../assets/flowers2.png";
 
 const HeaderTest = () => {
   const toRotate = ["I'M BEGUM"];
