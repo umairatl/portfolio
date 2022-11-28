@@ -8,7 +8,7 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
+import ListItemText from '@mui/material/ListItemTetxt';
 
 const Navbar = () => {
   const [state, setState] = React.useState({
@@ -108,7 +108,9 @@ const Navbar = () => {
           <div className="top">
 
 <div className="left-side">
-          <button onClick={toggleDrawer(anchor, true)} className='btn-sidenav'>≡</button>
+          {/* <button onClick={toggleDrawer(anchor, true)} className='btn-sidenav'>≡</button> */}
+          <button onClick={toggleDrawer(anchor, true)} className='btn-sidenav'>test</button>
+
           <Drawer
             anchor={anchor}
             open={state[anchor]}
