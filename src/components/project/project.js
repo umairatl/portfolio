@@ -42,7 +42,7 @@ const Project = () => {
                     {/* <Typography> */}
                     <div className="img-kkf">
                       <h1>KingKongFood Web Application</h1>
-                      <img src={kingkongfood} width="70%" />
+                      <img src={kingkongfood} width="70%" className="img-project"/>
                     </div>
                     <div className="content">
                       <p>
@@ -94,7 +94,10 @@ const Project = () => {
                     </Button>
                   </AccordionDetails>
                 </Accordion>
-                <Accordion
+
+
+
+                <Accordion 
                   expanded={expanded === "panel2"}
                   onChange={handleChange("panel2")}>
                   <AccordionSummary
@@ -112,7 +115,7 @@ const Project = () => {
                     {/* <Typography> */}
                     <div className="img-kkf">
                       <h1>Amiibo World</h1>
-                      <img src={amiibo} width="70%" />
+                      <img src={amiibo} width="70%" className="img-project"/>
                     </div>
                     <div className="content">
                       <p>
@@ -132,7 +135,10 @@ const Project = () => {
                       </ul>
                     </div>
 
+                    <p className="front-end-project">Note: preview only available for web layout</p>
+
                     {/* </Typography> */}
+                    <div className="hide-btn">
                     <Button
                       className="btn-project"
                       size="small"
@@ -143,8 +149,11 @@ const Project = () => {
                       }>
                       Preview
                     </Button>
+                    </div>
                   </AccordionDetails>
                 </Accordion>
+
+
               </div>
             </div>
           </div>

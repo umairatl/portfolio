@@ -66,8 +66,6 @@
     0 0 100px #87ab69 !important;
 }
 
-/* new */
-
 .box {
   width: 80rem;
   margin: auto;
@@ -91,6 +89,10 @@
 
 .content ul {
   text-align: left;
+}
+
+.front-end-project{
+  display: none;
 }
 
 @media screen and (max-width: 1256px) {
@@ -185,4 +187,31 @@
   .box {
     width: 60rem;
   }
+}
+
+@media screen and (max-width: 520px) {
+
+  .front-end-project{
+    display: block;
+  }
+
+  .hide-btn{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .img-project{
+    width: 234px !important;
+  }
+
+  .project p{
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .content{
+    font-size: 1rem;
+  }
+
 }

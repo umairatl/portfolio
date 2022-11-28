@@ -1,12 +1,84 @@
 import "../navbar/navbar.css";
 import pdf from "../../assets/Resume(Umairatul).pdf";
 import React, { useState } from "react";
-// import SideNav, { MenuIcon } from "react-simple-sidenav";
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import Button from '@mui/material/Button';
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemText from '@mui/material/ListItemText';
 
 const Navbar = () => {
-  const [showNav, setShowNav] = useState(false);
+  const [state, setState] = React.useState({
+    left: false,
+  });
 
-  const title = <p>Portfolio Content</p>;
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event.type === 'keydown' &&
+      (event.key === 'Tab' || event.key === 'Shift')
+    ) {
+      return;
+    }
+
+    setState({ ...state, [anchor]: open });
+  };
+
+  const list = (anchor) => (
+    <Box
+      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+      <List className="top-up-wrap">
+        {['Portfolio Content'].map((text, index) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton>
+              <ListItemText primary={text} classes='item-text-wrap'/>
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <Divider />
+      <List>
+        {/* {['Resume', 'Project', 'About Me'].map((text, index) => ( */}
+          <ListItem className="list-item-wrap"  disablePadding>
+            <ListItemButton>
+              <ListItemText className="nav-side-item">
+              <a  href="#resume">
+              About Me
+            </a>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+
+          <ListItem className="list-item-wrap"  disablePadding>
+            <ListItemButton>
+              <ListItemText  className="nav-side-item">
+              <a  href="#project">
+              Projects
+            </a>
+              </ListItemText>
+            </ListItemButton>
+          </ListItem>
+          
+          <ListItem className="list-item-wrap" disablePadding>
+            <ListItemButton>
+              <ListItemText  className="nav-side-item">
+              <a href={pdf} download>
+              Resume
+            </a>
+                </ListItemText>
+            </ListItemButton>
+          </ListItem>
+        {/* ))} */}
+      </List>
+    </Box>
+  );
+        
 
   return (
     <div>
@@ -29,29 +101,29 @@ const Navbar = () => {
         </nav>
       </div>
 
-      {/* <div className="nav-mobile">
-        <div className="top">
-          <div className="left-side">
-            <span onClick={() => setShowNav(true)}>&#9776;</span>
+      <div className="nav-mobile">
+      <div>
+      {['left'].map((anchor) => (
+        <React.Fragment key={anchor}>
+          <div className="top">
+
+<div className="left-side">
+          <button onClick={toggleDrawer(anchor, true)} className='btn-sidenav'>&#9776;</button>
+          <Drawer
+            anchor={anchor}
+            open={state[anchor]}
+            onClose={toggleDrawer(anchor, false)}
+          >
+            {list(anchor)}
+          </Drawer>
           </div>
-          <div className="right-side">developedbyuab</div>
-        </div>
-        <div className="nav-section" onClick={() => setShowNav(false)}>
-          <SideNav
-            className="side-cont"
-            showNav={showNav}
-            title={title}
-            items={[
-              <a href="#resume"> About Me </a>,
-              <a href="#project"> Projects </a>,
-              <a href={pdf} download>
-                Resume
-              </a>,
-            ]}
-          />
-        </div>
-      </div> */}
+<div className="right-side">developedbyuab</div>
+</div>
+        </React.Fragment>
+      ))}
+</div>
     </div>
+        </div>
   );
 };
 

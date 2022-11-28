@@ -65,8 +65,12 @@
 }
 
 .left-side {
-  margin-top: 1.5rem;
-  font-size: 1.2rem;
+  width: 16%;
+  height: fit-content;
+  text-align: center;
+  margin-top: 0.7rem;
+  margin-left: 0px;
+  font-size: 1.3rem;
   cursor: pointer;
 }
 
@@ -74,6 +78,36 @@
   font-size: 1.2rem;
   margin: 2rem;
 }
+
+.list-item-wrap:hover{
+  background: #3a4c40;
+
+}
+
+.nav-side-item a{
+  text-decoration: none;
+  color: #3a4c40;
+  font-size: 1.1rem;
+}
+
+.nav-side-item a:hover{
+  color: white !important;
+}
+
+.top-up-wrap{
+  padding-top: 23px !important;
+  background: #3a4c40;
+  color: white;
+}
+
+.btn-sidenav{
+  background: none;
+  font-size: 1.5rem;
+  color: white;
+  width: 0px;
+  height: 0px;
+}
+
 
 @media screen and (max-width: 662px) {
   .vis {
