@@ -8,7 +8,7 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemTetxt';
+import ListItemText from '@mui/material/ListItemText';
 
 const Navbar = () => {
   const [state, setState] = React.useState({
@@ -34,13 +34,13 @@ const Navbar = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List className="top-up-wrap">
-        {['Portfolio Content'].map((text, index) => (
-          <ListItem key={text} disablePadding>
+        {/* {['Portfolio Content'].map((text, index) => ( */}
+          <ListItem disablePadding>
             <ListItemButton>
-              <ListItemText primary={text} classes='item-text-wrap'/>
+              <ListItemText primary='Portfolio Content' className='item-text-wrap'/>
             </ListItemButton>
           </ListItem>
-        ))}
+        {/* ))} */}
       </List>
       <Divider />
       <List>
@@ -109,7 +109,7 @@ const Navbar = () => {
 
 <div className="left-side">
           {/* <button onClick={toggleDrawer(anchor, true)} className='btn-sidenav'>≡</button> */}
-          <button onClick={toggleDrawer(anchor, true)} className='btn-sidenav'>test</button>
+          <button onClick={toggleDrawer(anchor, true)} className='btn-sidenav'><span>=</span></button>
 
           <Drawer
             anchor={anchor}
