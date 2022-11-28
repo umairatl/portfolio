@@ -158,3 +158,10 @@
     font-size: 0.8rem;
   }
 }
+
+
+@media screen and (max-width: 381px){
+.title-col {
+    margin: -44px auto !important;
+}
+}

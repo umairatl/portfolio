@@ -34,7 +34,6 @@ const Navbar = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List className="top-up-wrap">
-        {/* {['Portfolio Content'].map((text, index) => ( */}
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemText primary='Portfolio Content' className='item-text-wrap'/>
@@ -44,37 +43,35 @@ const Navbar = () => {
       </List>
       <Divider />
       <List>
-        {/* {['Resume', 'Project', 'About Me'].map((text, index) => ( */}
+          <a  href="#resume" className="nav-side-item">
           <ListItem className="list-item-wrap"  disablePadding>
             <ListItemButton>
-              <ListItemText className="nav-side-item">
-              <a  href="#resume">
+              <ListItemText >
               About Me
-            </a>
               </ListItemText>
             </ListItemButton>
           </ListItem>
+            </a>
 
+              <a  href="#project" className="nav-side-item">
           <ListItem className="list-item-wrap"  disablePadding>
             <ListItemButton>
-              <ListItemText  className="nav-side-item">
-              <a  href="#project">
+              <ListItemText  >
               Projects
-            </a>
               </ListItemText>
             </ListItemButton>
           </ListItem>
+            </a>
           
+              <a href={pdf} download className="nav-side-item">
           <ListItem className="list-item-wrap" disablePadding>
             <ListItemButton>
-              <ListItemText  className="nav-side-item">
-              <a href={pdf} download>
+              <ListItemText  >
               Resume
-            </a>
                 </ListItemText>
             </ListItemButton>
           </ListItem>
-        {/* ))} */}
+            </a>
       </List>
     </Box>
   );

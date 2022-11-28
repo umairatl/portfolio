@@ -32,7 +32,7 @@ const SkillsMobile = () => {
               HTML, CSS, JS
             </Typography>
             <Typography style={{ color: "white" }}>
-              Able to create responsive and dynamic web app suing html, css and
+              Able to create responsive and dynamic web app using html, css and
               js
             </Typography>
           </CardContent>
@@ -71,7 +71,7 @@ const SkillsMobile = () => {
             </Typography>
             <Typography style={{ color: "white" }}>
               Understood briefly the concept of object based and have used it
-              with typescript before
+              with angular material before
             </Typography>
           </CardContent>
         </Card>
