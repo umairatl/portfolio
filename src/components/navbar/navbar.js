@@ -109,7 +109,7 @@ const Navbar = () => {
 
 <div className="left-side">
           {/* <button onClick={toggleDrawer(anchor, true)} className='btn-sidenav'>≡</button> */}
-          <button onClick={toggleDrawer(anchor, true)} className='btn-sidenav'><span>=</span></button>
+         <span onClick={toggleDrawer(anchor, true)} className='btn-sidenav'> ≡ </span>
 
           <Drawer
             anchor={anchor}

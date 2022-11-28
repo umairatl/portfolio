@@ -68,7 +68,7 @@
   width: 16%;
   height: fit-content;
   text-align: center;
-  /* margin-top: 0.7rem; */
+  margin-top: 1.5rem;
   margin-left: 0px;
   font-size: 1.3rem;
   cursor: pointer;
@@ -102,7 +102,7 @@
 
 .btn-sidenav{
   background: none;
-  font-size: 2.5rem;
+  font-size: 1rem;
   color: white;
   width: 0px;
   height: 0px;
