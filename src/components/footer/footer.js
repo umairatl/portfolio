@@ -5,7 +5,7 @@ const FOoter = () => {
   return (
     <section className="footer" id="footer">
       <div className="footer">
-        <p>All right reserved developedbyUAB</p>
+        <p>2022 developedbyUAB for Interview Purpose</p>
       </div>
     </section>
   );

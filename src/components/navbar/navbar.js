@@ -108,7 +108,7 @@ const Navbar = () => {
           <div className="top">
 
 <div className="left-side">
-          <button onClick={toggleDrawer(anchor, true)} className='btn-sidenav'>&#9776;</button>
+          <button onClick={toggleDrawer(anchor, true)} className='btn-sidenav'>≡</button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}
