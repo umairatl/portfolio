@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-left: 3rem;
+  margin-left: 4rem;
 }
 
 .img-con {
@@ -58,6 +58,19 @@
     height: 200px;
   }
 }
+
+@media screen and (max-width: 1253px) {
+  .card-skills img {
+    width: 209px !important;
+    margin-left: 2.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-skills img.img-html {
+    width: 271px !important;
+  }
+}
+
 
 @media screen and (max-width: 1220px) {
   .wrap-card {
