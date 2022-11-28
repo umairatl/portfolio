@@ -45,19 +45,18 @@ const Resume = () => {
               {/* </div> */}
             </div>
             <div className="socials-btn-wrap">
-              <ButtonGroup
+              <ButtonGroup style={{background: 'none', height:'0px'}}
                 variant="contained"
                 aria-label="outlined primary button group">
                 <a href={pdf} download>
-                  {" "}
-                  <Button className="btn-social-resume">Resume</Button>
+                  <button className="btn-social-resume">Resume</button>
                 </a>
-                <Button
+                <button
                   className="btn-social"
                   onClick={() => window.open("https://github.com/umairatl")}>
                   <i className="fa fa-github"></i>
-                </Button>
-                <Button
+                </button>
+                <button
                   className="btn-social"
                   onClick={() =>
                     window.open(
@@ -65,7 +64,7 @@ const Resume = () => {
                     )
                   }>
                   <i className="fa fa-linkedin"></i>
-                </Button>
+                </button>
               </ButtonGroup>
             </div>
           </div>
